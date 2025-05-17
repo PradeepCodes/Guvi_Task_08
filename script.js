@@ -24,3 +24,12 @@ window.del = function(){
     outputScreen.value = outputScreen.value.slice(0,-1);
 };
 });
+
+
+document.addEventListener("keydown",function(event){
+
+    if(/^[a-zA-Z]$/.test(event.key))
+    {
+        alert("Only numbers are allowed");
+    }
+});
