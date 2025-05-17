@@ -8,13 +8,16 @@
      <script src="script.js"></script>
 </head>
 <body>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+   <h1 id="title"><center>Calculator</center></h1>
+   <p id="description">A calculator is a device that performs arithmetic operations on numbers. Basic calculators can do only addition, subtraction, multiplication and division mathematical calculation </p>
     <div class="container">
         <div class="calculator">
-            <input type="text" placeholder="0"  id="output-screen">
+            <input type="text" placeholder="0"  id="result">
             <button onclick="display('%')">%</button>
-            <button onclick="clearScreen()">C</button>
+            <button id="clear" onclick="clearScreen()">C</button>
             <button onclick="del()">DEL</button>
-            <button onclick="display('/')">/</button>
+            <button  onclick="display('/')">/</button>
             <button onclick="display('7')">7</button>
             <button onclick="display('8')">8</button>
             <button onclick="display('9')">9</button>
@@ -22,15 +25,15 @@
             <button onclick="display('4')">4</button>
             <button onclick="display('5')">5</button>
             <button onclick="display('6')">6</button>
-            <button onclick="display('-')">-</button>
+            <button id="subtract" onclick="display('-')">-</button>
             <button onclick="display('1')">1</button>
             <button onclick="display('2')">2</button>
             <button onclick="display('3')">3</button>
-            <button onclick="display('+')">+</button>
+            <button id="add" onclick="display('+')">+</button>
             <button onclick="display('00')">00</button>
             <button onclick="display('0')">0</button>
             <button onclick="display('.')">.</button>
-            <button onclick="calculate()" class="equal">=</button>
+            <button onclick="calculate()" id="equal">=</button>
                         
 
         </div>

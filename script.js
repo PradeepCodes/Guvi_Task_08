@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function ()
 {
-let outputScreen = document.getElementById("output-screen");
+let outputScreen = document.getElementById("result");
 
 window.display = function(num){
     outputScreen.value += num;

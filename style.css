@@ -48,7 +48,7 @@ button{
     margin: 8px;
     font-size: 16px;
 }
-.equal{
+#equal{
     width: 48px;
     border-radius: 50px;
     background-color: #ecf0f3;
