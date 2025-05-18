@@ -33,3 +33,8 @@ document.addEventListener("keydown",function(event){
         alert("Only numbers are allowed");
     }
 });
+
+document.getElementById('mplus').addEventListener('click',()=>{
+result = parseInt(num1)+parseInt(num2);
+document.getElementById('result').textContent = 'Result : ${result}';
+});
