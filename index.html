@@ -15,14 +15,14 @@
       Basic calculators can do only addition, subtraction, multiplication and
       division mathematical calculation
     </p>
-     <p id="memory">Memory: 0</p>
+     <p >Memory: <span id="memory">0</span></p>
     <div class="container">
       <div class="calculator">
         <input type="text" placeholder="0" id="result" />
         <button id="ms">MS</button>
-        <button id="mplus">M+</button>
-        <button id="mminus">M-</button>
-        <button id="mc">MC</button>
+        <button id="mplus" onclick="memoryAdd()">M+</button>
+        <button id="mminus" onclick="memorySubtract()">M-</button>
+        <button id="mc" onclick="memoryClear()">MC</button>
         <button onclick="display('%')">%</button>
         <button id="clear" onclick="clearScreen()">C</button>
         <button onclick="del()">DEL</button>

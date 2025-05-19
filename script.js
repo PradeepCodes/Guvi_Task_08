@@ -38,3 +38,41 @@ document.getElementById('mplus').addEventListener('click',()=>{
 result = parseInt(num1)+parseInt(num2);
 document.getElementById('result').textContent = 'Result : ${result}';
 });
+
+
+if(!localStorage.getItem('calcMemory')){
+    localStorage.setItem('calcMemory', 0);
+}
+
+document.getElementById('memory').innerHTML = localStorage.getItem('calcMemory');
+
+
+    function getDisplayValue() {
+      const value = parseFloat(document.getElementById('result').value);
+      return isNaN(value) ? 0 : value;
+    }
+     function updateMemoryDisplay() {
+      document.getElementById('memory').innerText = localStorage.getItem('calcMemory');
+    }
+
+
+     function memoryAdd() {
+      const current = parseFloat(localStorage.getItem('calcMemory') || '0');
+      const newValue = current + getDisplayValue();
+      localStorage.setItem('calcMemory', newValue.toString());
+      updateMemoryDisplay();
+    }
+
+
+
+       function memorySubtract() {
+      const current = parseFloat(localStorage.getItem('calcMemory') || '0');
+      const newValue = current - getDisplayValue();
+      localStorage.setItem('calcMemory', newValue.toString());
+      updateMemoryDisplay();
+    }
+
+    function memoryClear() {
+      localStorage.setItem('calcMemory', '0');
+      updateMemoryDisplay();
+    }
